@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Qual a sua nacionalidade</h1>
+    Digite o país em que nasceu: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="pesquisar()">
+    <div id="nacionalidade">
+
+    </div>
+    <script>
+        function pesquisar() {
+            var para = window.document.querySelector('input#txtpais')
+            var nemtenta = window.document.querySelector('div#nacionalidade')
+            if (para == 'Brasil') {
+                nemtenta.innerHTML = ('Você é um brasileiro')
+            }
+            else{
+                nemtenta.innerHTML = ('Você é um estrangeiro')
+            }
+        }
+    </script>
+    
+   
+
+    
+</body>
+</html>
