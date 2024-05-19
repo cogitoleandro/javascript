@@ -26,7 +26,7 @@ function verificar() {
                  // adulto
                  img.setAttribute('src', 'man_adulto.jpg')
             }
-            else { (idade > 50)
+            else  { 
                 //idoso
                 img.setAttribute('src', 'man_idoso.jpg')
             }
